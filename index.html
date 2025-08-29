@@ -299,9 +299,9 @@
         });
 
 function confirmAndRedirect(url, chatType) {
-    const confirmed = confirm(`You are about to access ${chatType} on an external site. Continue?`);
+    const confirmed = confirm(`You are about to access ${chatType} on an external site. This will open in a new tab. Continue?`);
     if (confirmed) {
-        window.location.href = url; // Opens in same tab
+        window.open(url, '_blank');
     }
 }
         
