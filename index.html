@@ -137,7 +137,6 @@
         }
 
         .card-button {
-            background: linear-gradient(135deg, #6366f1, #10b981);
             color: white;
             border: none;
             padding: 1rem 2.5rem;
@@ -150,6 +149,19 @@
             display: inline-block;
             position: relative;
             overflow: hidden;
+        }
+
+        /* Specific button gradients matching their icons */
+        .text-chat .card-button {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+        }
+
+        .voice-chat .card-button {
+            background: linear-gradient(135deg, #43e97b, #38f9d7);
+        }
+
+        .avatar-chat .card-button {
+            background: linear-gradient(135deg, #fa709a, #fee140);
         }
 
         .card-button::before {
@@ -169,7 +181,19 @@
 
         .card-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+        }
+
+        /* Specific hover shadows matching the button colors */
+        .text-chat .card-button:hover {
+            box-shadow: 0 10px 25px rgba(79, 172, 254, 0.4);
+        }
+
+        .voice-chat .card-button:hover {
+            box-shadow: 0 10px 25px rgba(67, 233, 123, 0.4);
+        }
+
+        .avatar-chat .card-button:hover {
+            box-shadow: 0 10px 25px rgba(250, 112, 154, 0.4);
         }
 
         .features {
